@@ -1,0 +1,518 @@
+/* @font-face {
+    font-family: 'miniature';
+    src: url(../assets/Miniature.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+} */
+
+@font-face {
+    font-family: 'avara';
+    src: url('../font/avara.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'alpina';
+    src: url('../font/alpinaT.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'alpina';
+    src: url('../font/alpinaRit.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.lang{
+    z-index: 3;
+    position: fixed;
+    font-size: 2vw;
+    left: 12vw;
+    top: 15vh;
+    /* width: 100px; */
+    font-family: 'helvetica';
+
+}
+
+.fr{
+    font-weight: 100;
+}
+.fr:hover{
+    font-weight: 500;
+}
+.en{
+    font-weight: 100;
+}
+.en:hover{
+    font-weight: 500;
+}
+
+body {
+    
+    cursor: crosshair;
+    text-decoration: none;
+    /* font-size: 13px; */
+    background-color: #f0f0f0;
+    margin: 20px;
+    font-family: 'helvetica';
+}
+
+
+.it{
+    font-family: 'alpina';
+    font-style: normal;
+}
+
+.i{
+    font-style: italic;
+}
+
+.titre{
+    position: fixed;
+    top: 0;
+    margin: 25vh 12vw 20px 12vw;
+    /* font-size: 130px; */
+    /* font-family: 'alpina'; */
+    /* font-style: normal; */
+    z-index: 2;
+}
+
+.intro {
+    font-family: 'alpina';
+    font-style: italic;
+    font-size: 7vw;
+}
+
+.author{
+    position: fixed;
+    font-family: 'helvetica';
+    font-size: 2vw;
+    font-weight: 100;
+    /* text-transform: uppercase; */
+    line-height: normal;
+    right: 18vw;
+}
+.link{
+    font-style: italic;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.link :hover{
+    font-style: normal;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    height: 100%;
+}
+
+
+.display{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* grid-template-rows: repeat(12, 1fr); */
+    margin-top: 100vh;
+    /* padding-bottom: 40vh; */
+    background-color: white;
+    z-index: 3;
+}
+
+/* .s1{
+    margin-top: 35vh;
+    grid-row: 1/13;
+    grid-column: 1/5;
+    height: 100%;
+    position: fixed;
+    margin-left: 40px;
+    
+} */
+
+/* p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20;
+    font-style: italic;
+    line-height: 30px;
+} */
+.lecture{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20;
+    grid-column: 1/13;
+    flex-direction: column;
+    line-height: 26px;
+    margin-top: 10px;
+}
+
+.img{
+    /* position: fixed; */
+    width: 100vw;
+    height: 20vh;
+    z-index: 1;
+}
+.cover-img{
+    display: block;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90vh;
+    width: 20vw;
+    
+}
+
+.texte{
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.texte p {
+    margin: 0 24px 0 24px;
+}
+
+.p1{
+    grid-column: 1/13;
+    position: relative;
+    font-size: 32;
+    line-height: 36px;
+    font-style: italic;
+    padding-bottom: 24px;
+    margin-top: 10px;
+}
+
+.p2{
+    grid-column: 2/12;
+    position: relative;
+    font-size: 20;
+    line-height: 24px;
+    /* font-style: italic; */
+}
+
+.garden{
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    width: 20vw;
+    height: 6vh;
+    transform-origin: center;
+    object-fit: cover;
+}
+
+.lanark{
+    display: flex;
+    flex-direction: row;
+    grid-column: 2/12;
+    margin: 24px;
+}
+
+.lanark-img{
+    height: 100%;
+}
+
+.lanark-em{
+    width: 15vw;
+    height: 15vw;
+}
+
+.leg{
+    font-size: 14px;
+    line-height: 16px;
+    font-style: italic;
+    margin-right: 24px;
+}
+
+
+.large-img{
+    object-fit: cover;
+    grid-column: 2/12;
+    width: 100%;
+    height: 60vh;
+}
+
+.h3{
+    font-size: 40px;
+    grid-column: 1/13;
+    padding: 24px;
+    line-height: 42px;
+    /* padding-top: 80px; */
+    font-style: italic;
+}
+
+.mount{
+    position: static;
+    display: inline-block;
+    top: 10px;
+    width: 15vw;
+    height: 6vh;
+    transform-origin: center;
+    float: left;
+    object-fit: cover;
+    margin-right: 5px;
+    /* margin-left: 14px; */
+}
+
+.audio{
+
+    width: 100%;
+    height: 5vh;
+    transform-origin: center;
+    top: 10px;
+    margin-bottom: 5px;
+    display: none;
+}
+
+.swim{
+    display: flex;
+    float: left;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: normal;
+    font-style: italic;
+    width: 12vw;
+}
+
+.swimm{
+    display: flex;
+    float: right;
+    flex-direction: column;
+    margin: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: normal;
+    font-style: italic;
+    width: 12vw;
+}
+
+.swim img{
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    height: 100px;
+}
+
+.swimm img{
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    height: 100px;
+}
+
+.salem{
+    margin-top: 24px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.alto{
+    width: 100%;
+    /* height: 15vw; */
+    float: left;
+    margin: 0px;
+    margin-right: 10px;
+}
+
+.extrait{
+    float: left;
+    width: 30vw;
+    height: 17vw;
+    margin: 5px;
+    margin-right: 10px;
+}
+
+.aisha{
+    grid-column: 2/12;
+    display: block;
+    width: 100%;
+    height: 80vh;
+    margin-top: 24px;
+}
+
+.lyra{
+    width: 15vw;
+    height: 15vw;
+    float: left;
+    margin: 5px;
+    margin-right: 10px;
+}
+
+.evita{
+    grid-column: 2/12;
+    margin: 24px;
+    width: 95%;
+    
+}
+
+.leya{
+    margin-top: 24px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vw;
+    height: 30vw;
+}
+
+.bg-cover-img{
+    object-fit: cover;
+    position: fixed;
+    left: -10%;
+    top: -10%;
+    filter: blur(90px);
+    width: 120%;
+    height: 100%;
+    rotate: 180deg;
+    z-index: -1;
+}
+
+.end{
+    height: 100vh;
+}
+
+.end-img{
+    display: block;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10vh;
+    width: 20vw;
+    
+}
+
+.playlist{
+    z-index: 3;
+    display: block;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70vh;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .bg-cover-img{
+        width: 120%;
+    }
+    .lang{
+        top:3vh;
+        left: 5vw;
+        font-size: 4vw;
+    }
+    .titre{
+        margin: 8vh 5vw 20px 5vw;
+    }
+    .intro {
+        font-size: 12vw;
+
+    }
+    .author{
+        right: 0;
+        position: relative;
+        font-size: 5vw;
+        margin-top: 24px ;
+        text-transform:none;
+        line-height: 7vw;
+        font-weight: 100;
+    }
+    .link{
+        font-size: 4vw;
+        font-weight: 100;
+    }
+    .cover-img{
+        width: 25vh;
+        margin-top: 80vh;
+    }
+    
+    .display{
+        margin-top: 90vh;
+    }
+    .texte{
+        margin-left: 0;
+    }
+    .texte .p1{
+        font-size: 4vh;
+        margin: 0 10px 0 10px;
+        line-height: 5vh;
+    }
+
+    .garden{
+        width: 30vw;
+    }
+    .texte p {
+        margin: 0 0 0 0;
+    }
+    .texte .p2{
+        margin: 0 0 0 0;
+        font-size: 3vh;
+        line-height: normal;
+    }
+    .lanark{
+        flex-direction: column;
+        margin: 24px 0 5px 0;
+    }
+    .lanark-em{
+        width: 60vw;
+        height: 60vw;
+    }
+    .lanark .leg{
+        margin: 12px 0 5px 0;
+        font-size: 24px;
+    }
+    .large-img{
+        grid-column: 1/13;
+    }
+    .h3{
+        padding: 10px;
+        font-size: 30px;
+    }
+    .swim{
+        width: 40vw;
+        height: 40vw;
+    }
+    .alto{
+        width: 100%;
+        height: 100%;
+    }
+    .leya{
+        width: 80vw;
+        height: 80vw;
+    }
+    .mount{
+        width: 30vw;
+    }
+    .extrait{
+        width: 80vw;
+        height: 45vw;
+    }
+    .aisha{
+        grid-column: 1/13;
+        height: 60vw;
+        margin-bottom: 10px;
+    }
+    .lyra{
+        width: 40vw;
+        height: 40vw;
+        margin: 5 10 5 0;
+    }
+    .evita{
+        margin: 0;
+        margin-left: 5px;
+        grid-column: 1/13;
+        height: 35vh;
+    }
+
+    .end-img{
+        margin-top: -20px;
+    }
+    .playlist{
+        width: 80vw;
+        margin-top: 50vh;
+    }
+  }
