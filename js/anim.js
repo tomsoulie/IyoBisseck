@@ -1,4 +1,4 @@
-let leTitre = document.querySelector("#title");
+let leTitre = document.querySelector("#h1");
 let btAgrandir = document.querySelector("#agrandir");
 let btReduire = document.querySelector("#reduire");
 
