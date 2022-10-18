@@ -1,0 +1,68 @@
+/* @font-face {
+    font-family: 'miniature';
+    src: url(../assets/Miniature.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+} */
+
+@font-face {
+    font-family: 'avara';
+    src: url('../font/avara.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'alpina';
+    src: url('../font/alpinaT.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'alpina';
+    src: url('../font/alpinaRit.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+    font-size: 42px;
+}
+
+.container{
+    position: fixed;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 2vw;
+}
+
+.columnTest{
+    display: grid;
+    position: fixed;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 2vw;
+}
+
+.column{
+    height: 100%;
+    
+    opacity: 0.5;
+    background-color: red;
+}
+
+.vid{
+    grid-column: 2/5;
+    background-color: blue;
+    height: 200px;
+}
+
+@media screen and (max-width: 600px) {
+    
+   
+  }
