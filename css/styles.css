@@ -29,18 +29,24 @@
 
 .h1{
     font-size: 42px;
-    
+    grid-column: 2/5;
+    font-family: Helvetica;
+    margin-top: 25px;
+    height: 0px;
 }
 
 .container{
     position: fixed;
     display: grid;
+    width: 100vw;
     height: 100vh;
     grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     column-gap: 2vw;
 }
 
 .columnTest{
+    /* visibility: hidden; */
     display: grid;
     position: fixed;
     z-index: -1;
@@ -59,8 +65,25 @@
 
 .vid{
     grid-column: 2/5;
-    background-color: blue;
-    height: 200px;
+    grid-row: 4/6;
+    visibility: hidden;
+}
+
+.ref{
+    display: flex;
+    flex-direction: column;
+    grid-column: 4/8;
+    grid-row: 3/8;
+    font-family: helvetica;
+}
+.a{
+    text-decoration: underline black;
+}
+
+
+.gras{
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 @media screen and (max-width: 600px) {
