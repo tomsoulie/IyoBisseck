@@ -27,15 +27,41 @@
     font-style: normal;
 }
 
+
 .h1{
-    font-size: 42px;
+    font-size: 65px;
     grid-column: 2/5;
     font-family: Helvetica;
     margin-top: 25px;
     height: 0px;
 }
 
+.vid{
+    background-color: blue;
+}
+
+.displayGrid{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-family: helvetica;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.bt{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: blue;
+    cursor: pointer;
+}
+
 .container{
+    font-family: helvetica;
     position: fixed;
     display: grid;
     width: 100vw;
@@ -46,7 +72,7 @@
 }
 
 .columnTest{
-    /* visibility: hidden; */
+    visibility: hidden;
     display: grid;
     position: fixed;
     z-index: -1;
@@ -64,9 +90,11 @@
 }
 
 .vid{
-    grid-column: 2/5;
-    grid-row: 4/6;
-    visibility: hidden;
+    grid-column: 2/4;
+    grid-row: 3/8;
+    visibility: visible;
+    background-color: blue;
+    
 }
 
 .ref{
@@ -77,13 +105,15 @@
     font-family: helvetica;
 }
 .a{
-    text-decoration: underline black;
+    font-style: italic;
 }
+
 
 
 .gras{
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 @media screen and (max-width: 600px) {
